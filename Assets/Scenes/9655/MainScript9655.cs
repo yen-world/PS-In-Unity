@@ -33,12 +33,14 @@ public class MainScript9655 : MonoBehaviour
     }
     public void GamePlay()
     {
+        int rand_number = Random.Range(0, 100);
+        rand_number = (rand_number > 49) ? 3 : 1; // 49보다 크면 3, 작으면 1
         if (N >= 3)
         {
-            N -= 3;
+            N -= rand_number;
             if (sk)
             {
-                for (int i = 0; i < 3; i++)
+                for (int i = 0; i < rand_number; i++)
                 {
                     Instantiate(StronPrefab, SK_GLG.transform.position, transform.rotation, SK_GLG.transform);
                     Destroy(Board_GLG.transform.GetChild(i).gameObject);
@@ -47,7 +49,7 @@ public class MainScript9655 : MonoBehaviour
             }
             else
             {
-                for (int i = 0; i < 3; i++)
+                for (int i = 0; i < rand_number; i++)
                 {
                     Instantiate(StronPrefab, CY_GLG.transform.position, transform.rotation, CY_GLG.transform);
                     Destroy(Board_GLG.transform.GetChild(i).gameObject);

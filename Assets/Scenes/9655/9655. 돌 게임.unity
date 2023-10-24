@@ -623,7 +623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7830e236862019e4598414c270147405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  N: 3
+  N: 50
   StronPrefab: {fileID: 2476508693768352779, guid: 7c112a81e0db00d488f4fc2952d62d80, type: 3}
   Board_GLG: {fileID: 1892152986}
   SK_GLG: {fileID: 619096651}
